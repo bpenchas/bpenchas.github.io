@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    text-indent: 50px;
+    font-size: 22px;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/*
+#sf {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 65%;
+    z-index: -1;
+}*/
+
+/*#san_francisco {
+    margin-top: 20%;
+}*/
+
+#toplink {
+    z-index: 100;
+}
+
+#text {
+    margin-top: 50px;
+    width: 600px;
+    background: hsla(0,0%,100%,.28);
+    padding: 30px 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16), 0 3px 10px rgba(0,0,0,.23);
+    z-index: 100;
+    /* transform: rotate(-2deg); */
+}
+
+.hand {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 100px;
+    color: white;
+}
+
+.sub {
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+}
+
+.sub a {
+    text-decoration: underline;
+}
+
+.writing:before {
+    content: '\f10d';
+    font-family: fontAwesome;
+    position: relative;
+    /* top: 50px; */
+    font-size: 3em;
+    
+}
+
+body {
+    background: #02c9c9;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+
+#main {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#san_francisco {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 14px #CCCCCC;
+    float: none;
+    margin-top: 20px;
+
+}
+
+
+
+/*.nav .indicator {
+    height: 6px;
+    background: #5C1F7A;
+    position: absolute;
+    bottom: 0;
+}*/
+
+#footer{
+    height: 50px;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+}
+
+
+.icons {
+    margin: 0 auto;
+
+}
+
+.icons li{
+    display: inline-block;
+    list-style: none;
+    color: gray;
+    transition: 0.5s;
+    vertical-align: middle;
+}
+
+.icons li:hover{
+    color:black;
+}
+
+.nav_bar {
+    height: 50px;
+    /* background: #efefef; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+}
+
+.nav_bar a{
+    list-style: none;
+    color: white;
+    transition: 0.5s;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-right: 15px;
+}
+
+.nav_bar a:hover{
+    color:black;
+}
+
+
+@media only screen and (max-width: 680px) {
+    #text {
+        max-width: 250px;
+        padding: 30px 20px;
+    }
+
+    .writing:before {
+        content: '';
+        
+    }
+
+    .sub {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        text-indent: 0px;
+    }
+
+    #san_francisco {
+        display: none;
+    }
+
+    #footer {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 200px;
+    }
+
+    .icons li{
+        display: block;
+    }
+
+    .icons .footer-text {
+        display: none;
+    }
+
+}
